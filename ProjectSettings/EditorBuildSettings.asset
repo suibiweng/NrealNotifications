@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/NRSDK/Demos/Meshing.unity
-    guid: 843bcf8f6426488479e1c5ed31583774
+    path: Assets/Scenes/NotificationNreal.unity
+    guid: 9baba450b30308a42869add19fe5cbaa
   m_configObjects: {}
