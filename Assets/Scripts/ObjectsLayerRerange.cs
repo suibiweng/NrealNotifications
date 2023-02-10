@@ -6,7 +6,7 @@ public  class ObjectsLayerRerange : MonoBehaviour
 {
    
     public Renderer[] allRenders;
-    Camera CenterCam,peripheralCam;
+   public Camera CenterCam,peripheralCam;
 
 
     // Start is called before the first frame update
@@ -23,8 +23,33 @@ public  class ObjectsLayerRerange : MonoBehaviour
     {
         foreach (var r in allRenders) {
 
-            bool camCenter = RendererExtensions.IsVisibleFrom(r , CenterCam);
-            bool camPer = RendererExtensions.IsVisibleFrom(r, peripheralCam);
+
+            if(r.gameObject.tag=="NotiObject"){
+
+                bool camCenter = RendererExtensions.IsVisibleFrom(r , CenterCam);
+          
+
+                if(camCenter){
+
+                    r.gameObject.layer=0;
+
+                }else{
+
+
+                      r.gameObject.layer=6;
+
+
+
+                }
+
+
+
+
+
+
+
+            }
+            
 
 
 
